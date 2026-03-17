@@ -8,18 +8,19 @@ Tarea 2: Administración de sitios web (principios básicos de CI/CD y despliegu
 
 Este proyecto utiliza **GitHub Actions + GitHub Pages**.
 
-### 🔄 ¿Cuándo se despliega?
+### 📌 Descripción
 
-El sitio se publica automáticamente cuando:
+Este proyecto implementa un flujo de integración y despliegue continuo (CI/CD) utilizando **GitHub Actions** para publicar automáticamente un sitio web estático en **GitHub Pages**.
 
-- ✔️ Se hace **merge a la rama `main`**
+El objetivo principal es automatizar el proceso de despliegue cada vez que se realizan cambios en la rama principal (`main`), específicamente cuando se hace merge de un Pull Request.
 
 ---
 
-## ⚙️ Workflow (GitHub Actions)
+## ⚙️ ¿Cómo se configuró el workflow?
 
-Ubicación del workflow:
+El workflow fue configurado mediante un archivo YAML ubicado en la siguiente ruta:
 .github/workflows/deploy.yml
+
 
 ---
 
