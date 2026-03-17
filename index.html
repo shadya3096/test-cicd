@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hola Mundo</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(255, 0, 153, 0.25), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(0, 204, 255, 0.25), transparent 30%),
+        linear-gradient(135deg, #0f172a, #111827, #1e293b);
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      padding: 40px 30px;
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+    }
+
+    h1 {
+      font-size: clamp(3rem, 8vw, 6rem);
+      font-weight: 800;
+      letter-spacing: -2px;
+      background: linear-gradient(90deg, #ff4ecd, #7c3aed, #22d3ee, #38bdf8);
+      background-size: 300% 300%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientMove 6s ease infinite;
+    }
+
+    p {
+      margin-top: 16px;
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    @keyframes gradientMove {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hola Mundo</h1>
+    <p>Diseño moderno con degradado, glassmorphism y fondo dinámico.</p>
+  </div>
+</body>
+</html>
