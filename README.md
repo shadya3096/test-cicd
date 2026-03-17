@@ -22,6 +22,20 @@ El workflow fue configurado mediante un archivo YAML ubicado en la siguiente rut
 .github/workflows/deploy.yml
 
 
+### 🔄 Evento que dispara el workflow
+
+El flujo se ejecuta automáticamente cuando ocurre un evento de tipo:
+
+- `push` sobre la rama `main`
+
+Esto permite que cada vez que se haga merge de un Pull Request a `main`, el despliegue se realice sin intervención manual.
+
+```yaml
+on:
+  push:
+    branches:
+      - main
+
 ---
 
 ## 🌍 Ver sitio en producción
