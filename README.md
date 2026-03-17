@@ -18,12 +18,6 @@ El sitio se publica automáticamente cuando:
 
 ## ⚙️ Workflow (GitHub Actions)
 
-El flujo realiza:
-
-1. 📥 Checkout del repositorio  
-2. 📦 Empaquetado del sitio  
-3. 🌍 Deploy en GitHub Pages  
-
 Ubicación del workflow:
 .github/workflows/deploy.yml
 
@@ -32,3 +26,4 @@ Ubicación del workflow:
 ## 🌍 Ver sitio en producción
 
 Una vez desplegado, podrás verlo en:
+https://shadya3096.github.io/test-cicd/
